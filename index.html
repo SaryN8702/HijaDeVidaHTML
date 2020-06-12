@@ -22,11 +22,12 @@
             }
             nav{
                 font-size: 24px;
-                color: blueviolet;
+                color: #5B2C6F;
             }
             nav ul {
                 list-style-type: none;
                 text-align: center;
+                color: blueviolet;
             }
             nav li {
                 display: inline;
@@ -87,6 +88,20 @@
             .basiclist{
                 text-align: center;
             }
+            .dlbasiclist {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .dtbasiclist {
+                font-weight: bold;  
+                width: 25%;
+                padding-top: 1em;  
+            }
+            .ddbasiclist {
+                display: flex;
+                margin: 0;
+                padding-top: 1em;
+            }
             .socialmediafooter li{
                 display: inline;
                 text-align: left;
@@ -125,6 +140,24 @@
                 padding: 10px;
                 box-sizing: border-box;   
             }
+            .dtdirect{
+                font-weight: bold;  
+                width: 25%;
+                padding-top: 1em; 
+                width: 800px; 
+            }
+            
+            .dddirect {
+                margin: 400px;
+                display: flex;
+                margin: 0 auto;
+                padding-top: 1em;
+                
+            }
+            .dldirect {
+                display: flex;
+                flex-wrap: wrap;
+            }
             .education-1{
                 display: inline-block;
                 width: 800px;
@@ -135,6 +168,18 @@
                 display: inline;
                 text-align: center;
             }
+            form{
+                width: 0 auto;
+            }
+            label, input {
+
+                display: table-cell;
+                margin-bottom: 10px;
+            }
+
+            label {
+                padding-right: 10px;
+            }    
         </style>
         
     </head>
@@ -226,15 +271,15 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo tempore blanditiis nam possimus, veritatis laboriosam reprehenderit sed quos dolorum alias accusamus repellat? Repellendus vero quas asperiores sapiente voluptate minus atque.
                     
                     <address>
-                    <dl>
-                        <dt>Direct Report</dt>
-                        <dd>
+                    <dl class="dldirect">
+                        <dt class="dtdirect">Direct Report</dt>
+                        <dd class="dddirect">
                             <a href="email: sarynavarrete@gmail.com">Joey Ramone</a>
                         </dd>
-                        <dt>
+                        <dt class="dtdirect">
                             Phone       
                         </dt>
-                        <dd>
+                        <dd class="dddirect">
                             <a href="tel:+573104067783">310-406-7783</a>
                         </dd>
                     </dl>
@@ -340,6 +385,28 @@
                 <h4 class="contact">Contanct</h4>
                 <!--arreglar el form aqui-->
             </section>
+            <div>
+                <Section>
+                    <form action="SayHelloToMe" method="get" class="form">
+                        <div class="formsections">
+                        <label>Name</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div class="formsections">
+                        <label>Email</label>
+                        <input type="email" name="correo" required>
+                        </div>
+                        <div class="formsections">
+                            <label>Message</label>
+                            <input type="text" name="mensaje" required>
+                        </div>
+                        <div class="formsections">
+                            <input type="submit" name="send" required>
+                            
+                        </div>
+                    </form>
+                </Section>
+            </div>
         </main>
         <footer>
             <span>
