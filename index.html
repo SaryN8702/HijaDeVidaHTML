@@ -12,6 +12,7 @@
             html {
                 background-color: #AEB6BF;
                 background-image: url(https://cdn130.picsart.com/290688758017201.jpg?type=webp&to=min&r=640);
+                /**background-repeat: no-repeat;**/
                 opacity: 80%;
             }
             .headerinfo{
@@ -70,7 +71,7 @@
                 padding-top: 20px;
             }
             .experiencesection {
-                height: 2043px;
+                height: 1500px;
                 background-color: #BB8FCE;
                 
             }
@@ -128,10 +129,12 @@
             h2{
                 text-align: center;
                 margin: 10px;
+                text-shadow: 2px 2px 4px black;
 
             }
             h3{
                 text-align: center;
+                font-size: 28px;
 
             }
             h4{
@@ -154,28 +157,58 @@
             .socialmediaheader li{
                 display: inline;
             }
+            .profilefont{
+                font-size: 28px;
+            }
             .profilecontent{
                 width: 1100px;
                 text-align: 0 auto;
                 margin: 20px 80px;
             }
-            .basiclist{
+            .binfolist{
                 text-align: center;
+            }
+            .binfolist ul{
+                list-style-type: none;
+                text-align: center;
+            }
+            .binfolist li{
+                list-style-type: none;
+                text-align: center
+            }
+            .maps{
+                margin-top: 15px;
+            }
+            .directreport ul{
+                display: inline;
+                list-style-type: none;
+                text-align: left;
+            }
+            .directreport li{
+                display: inline;
+                list-style-type: none;
+                margin: 0 50px 0px;
+            }
+            .directreportlink{
+                margin: 0px -90px;
+            }
+
+            /**.basiclist{
+                text-align: center;
+            }
+        }
+            .dtbasiclist {
+                float: center;
             }
             .dlbasiclist {
                 display: flex;
                 flex-wrap: wrap;
             }
-            .dtbasiclist {
-                font-weight: bold;  
-                width: 25%;
-                padding-top: 1em;  
-            }
             .ddbasiclist {
                 display: flex;
                 margin: 0;
                 padding-top: 1em;
-            }
+            }**/
             .socialmediafooter li{
                 display: inline;
                 text-align: left;
@@ -190,13 +223,19 @@
                 padding: 20px;
                 border-radius: 50%;
             }
+            .hugetitle{
+                font-size: 24px;
+            }
             .huge-1{
                 display: inline-block;
                 width: 650px;
                 padding: 10px;
                 box-sizing: border-box;  
                 text-align: 0 auto;
-                margin: 20px 80px;
+                margin: 20px 80px 0px;
+            }
+            .prodigioustitle{
+                font-size: 24px;
             }
             .prodigious{
                 display: inline-block;
@@ -206,6 +245,9 @@
                 text-align: 0 auto;
                 margin: 20px 80px;
             }
+            .wundermantitle{
+                font-size: 24px;
+            }
             .wunderman{
                 display: inline-block;
                 width: 650px;
@@ -213,6 +255,9 @@
                 box-sizing: border-box;   
                 text-align: 0 auto;
                 margin: 20px 80px;
+            }
+            .studiocomtitle{
+                font-size: 24px;
             }
             .studiocom{
                 display: inline-block;
@@ -261,13 +306,8 @@
             }
             label, input {
 
-                display: table-cell;
-                margin-bottom: 10px;
-            }
-
-            label {
-                padding-right: 10px;
-            }    
+                display: inline;
+            } 
             /**aside {
                 width: 40%;
                 padding-left: .5rem;
@@ -333,12 +373,12 @@
         <div>
             <section class="aboutme" id="about">
                 <h2 class="about" >About</h2>
-                <h3>Profile</h3>
+                <h3 class="prfilefont">Profile</h3>
                 <p class="profilecontent">
-                     ipsum dolor sit amet consectetur adipisicing elit. Fugit accusamus quam error, autem rem laboriosam dignissimos ex dolore necessitatibus ducimus at ea debitis praesentium asperiores atque dicta! Quisquam, tempore corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis adipisci eum veniam, nihil saepe quam explicabo placeat ipsam tempora sit vero ea earum, dignissimos commodi. Labore dolores maxime dicta.</p>
+                     I've been working as QA Analyst around 8 years, where I could find a passion in my life. I have had the opportunity to learn along the way different things related to the industry like: HTML, CSS, automation in Python, etc. Also I have been able to work in my soft skills which have taught me how to grow up in this wonderful industry</p>
                     </p>
                     <h3 class="basicinfo">Basic Info</h3>
-                    <dl class="basiclist">
+                    <!--<dl class="basiclist">
                         <dt>Born</dt>
                         <dd>Lorem impsun</dd>
                         <dt>Birth Place</dt>
@@ -351,7 +391,19 @@
                         <dd>
                             <a href= "elm street"></a><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1154021704747!2d-74.10859303504024!3d4.573283396677445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6d5cd4208642adc9!2sConjunto%20Residencial%20Bosques%20de%20San%20Carlos!5e0!3m2!1sen!2sco!4v1591720340641!5m2!1sen!2sco" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </dd>
-                    </dl>
+                    </dl>-->
+                    <ul class="binfolist">
+                        <li>Born: Feb 28th 1987</li>
+                        <li>Birth Place: Bogota DC</li>
+                        <li>Phone Numer 
+                            <a href="tel:+573184067783">318-406-7783</a>
+                            </li>
+                        <li>
+                            Address: Conjunto residelcial Bosque San Carlos
+                        </li>    
+                        <li><iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1154021704747!2d-74.10859303504024!3d4.573283396677445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6d5cd4208642adc9!2sConjunto%20Residencial%20Bosques%20de%20San%20Carlos!5e0!3m2!1sen!2sco!4v1591720340641!5m2!1sen!2sco" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></li>
+                    </ul>
+
                 
             </section>
         </div>
@@ -360,15 +412,13 @@
                 <h4 class="experience">Experience</h4>
                 <article>
                     <p class="huge-1">
-                    <strong>QA Analyst</strong>
+                    <strong class="hugetitle">QA Analyst
                     <br/>
-                        At huge Inc <br/>
+                        At huge Inc <br/></strong>
                         5 years<br/>
                     ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt praesentium fugiat in ea eum facilis, aspernatur repellat, iusto, amet perferendis animi adipisci. Totam cum iure voluptas explicabo dignissimos rerum!<br/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo tempore blanditiis nam possimus, veritatis laboriosam reprehenderit sed quos dolorum alias accusamus repellat? Repellendus vero quas asperiores sapiente voluptate minus atque.
-                    
-                    <address>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.                    
+                   <!-- <address>
                     <dl class="dldirect">
                         <dt class="dtdirect">Direct Report</dt>
                         <dd class="dddirect">
@@ -381,20 +431,28 @@
                             <a href="tel:+573104067783">310-406-7783</a>
                         </dd>
                     </dl>
-                    </address>
+                    </address>-->
+                    <ul class="directreport">
+                        <li>Direct Report</li>
+                        <li>
+                            <a class="directreportlink" href="mailto:sarynavarrete@gmail.com">Joey Ramone</a>
+                        </li>
+                        <li>Phone</li>
+                        <li>
+                            <a class="directreportlink" href="tel:+573104067783">310-406-7783</a>
+                        </li>
+                    </ul>
                 </p>
                 </article>
                     <article>
                         <p class="prodigious">
-                        <strong>QA Analyst</strong>
+                        <strong class="prodigioustitle">QA Analyst
                             <br/>
-                            At Prodigious <br/>
+                            At Prodigious <br/></strong>
                             4 Moths <br/>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt praesentium fugiat in ea eum facilis, aspernatur repellat, iusto, amet perferendis animi adipisci. Totam cum iure voluptas explicabo dignissimos rerum!<br/>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo tempore blanditiis nam possimus, veritatis laboriosam reprehenderit sed quos dolorum alias accusamus repellat? Repellendus vero quas asperiores sapiente voluptate minus atque.
-                        
-                        <address>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.                        
+                       <!-- <address>
                         <dl>
                             <dt>Direct Report</dt>
                             <dd>
@@ -407,20 +465,28 @@
                                 <a href="tel:+573104067783">310-406-7783</a>
                             </dd>
                         </dl>
-                        </address>
+                        </address> -->
+                        <ul class="directreport">
+                            <li>Direct Report</li>
+                            <li>
+                                <a class="directreportlink" href="mailto:sarynavarrete@gmail.com">Joey Ramone</a>
+                            </li>
+                            <li>Phone</li>
+                            <li>
+                                <a class="directreportlink" href="tel:+573104067783">310-406-7783</a>
+                            </li>
+                        </ul>
                         </p>
                     </article>  
                     <article>
                         <p class="wunderman">
-                        <strong>QA Analyst</strong>
+                        <strong class="wundermantitle">QA Analyst
                         <br/>
-                            At Wunderman <br/>
+                            At Wunderman <br/></strong>
                             4 Moths <br/>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt praesentium fugiat in ea eum facilis, aspernatur repellat, iusto, amet perferendis animi adipisci. Totam cum iure voluptas explicabo dignissimos rerum!<br/>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo tempore blanditiis nam possimus, veritatis laboriosam reprehenderit sed quos dolorum alias accusamus repellat? Repellendus vero quas asperiores sapiente voluptate minus atque.
-                        </p>
-                        <address>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.                        </p>
+                        <!--<address>
                         <dl>
                             <dt>Direct Report</dt>
                             <dd>
@@ -433,20 +499,29 @@
                                 <a href="tel:+573104067783">310-406-7783</a>
                             </dd>
                         </dl>
-                        </address>
+                        </address>-->
+                        <ul class="directreport">
+                            <li>Direct Report</li>
+                            <li>
+                                <a class="directreportlink" href="mailto:sarynavarrete@gmail.com">Joey Ramone</a>
+                            </li>
+                            <li>Phone</li>
+                            <li>
+                                <a class="directreportlink" href="tel:+573104067783">310-406-7783</a>
+                            </li>
+                        </ul> 
                     </p>
                     </article>
                     <article>
                         <p class="studiocom">
-                        <strong>QA Analyst</strong>
+                        <strong class="studiocomtitle">QA Analyst
                         <br/>
-                            At Studiocom <br/>
+                            At Studiocom <br/> </strong>
                             4 Moths <br/>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil deserunt praesentium fugiat in ea eum facilis, aspernatur repellat, iusto, amet perferendis animi adipisci. Totam cum iure voluptas explicabo dignissimos rerum!<br/>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui, velit excepturi nemo minus sed modi delectus, sunt eaque maxime expedita iste? Illo porro, sint eligendi perspiciatis at nesciunt dicta.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo tempore blanditiis nam possimus, veritatis laboriosam reprehenderit sed quos dolorum alias accusamus repellat? Repellendus vero quas asperiores sapiente voluptate minus atque.
                         </p>
-                        <address>
+                       <!-- <address>
                         <dl>
                             <dt>Direct Report</dt>
                             <dd>
@@ -459,7 +534,17 @@
                                 <a href="tel:+573104067783">310-406-7783</a>
                             </dd>
                         </dl>
-                        </address>
+                        </address> -->
+                        <ul class="directreport">
+                            <li>Direct Report</li>
+                            <li>
+                                <a class="directreportlink" href="mailto:sarynavarrete@gmail.com">Joey Ramone</a>
+                            </li>
+                            <li>Phone</li>
+                            <li>
+                                <a class="directreportlink" href="tel:+573104067783">310-406-7783</a>
+                            </li>
+                        </ul>
                     </p>
                     </article>
                 </section>
@@ -502,21 +587,21 @@
             <section class="contactme" id="contact">
                 <h4 class="contact">Contact</h4>
                     <h4 class="sayhello">Say Hello To Me!</h4>
-                    <form action="SayHelloToMe" method="get" class="form">
+                    <form method="GET" action="/result.html" class="form">
                         <div class="formsections">
                         <label class="labelname">Name</label>
-                        <input type="text" name="nombre" required>
+                        <input type="text" name="nombre" required placeholder="Name here">
                     </div>
                     <div class="formsections">
                         <label class="labelemail">Email</label>
-                        <input type="email" name="correo" required>
+                        <input type="email" name="correo" required placeholder="Your Email">
                         </div>
                         <div class="formsections">
                             <label class="labelmessage">Message</label>
-                            <input type="text" name="mensaje" required>
+                            <input type="text" name="mensaje" required placeholder="Say hello to me">
                         </div>
                         <div class="formsections">
-                            <input type="submit" name="send" required>   
+                            <input type="submit" value="Sent" name="send" required>   
                         </div>
                     </form>
                 </section>
@@ -534,8 +619,10 @@
                     <li>
                         <a href="https://www.linkedin.com/in/sary-navarrete-b8425061/" target="_blank" rel="nor"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
                     </li>
-                </ul>    
-                <p class="copyrights">CopyRights Sary Navarrete </p>       
+                    <li>
+                        <span class="copyrights">CopyRights Sary Navarrete</span>
+                    </li>
+                </ul>          
         </footer>
 
     </body>
